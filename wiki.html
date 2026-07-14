@@ -3,10 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Wiki</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Quicksand:wght@600;700;800&family=Cinzel:wght@600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="wiki.css">
 </head>
 <body>
-    <p> oiii
-    </p>
+    <div class="tudo">
+        
+        <header>
+            <div class="nav-esq">
+                <div class="logoBQ">
+                    <i class="fa-solid fa-gamepad iconBQ"></i>
+                    <span class="nomeBQ">BattleQuizz</span>
+                </div>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="home.html"><i class="fa-solid fa-house me-1"></i> Home</a></li>
+                    <li><a href="wiki.html" class="active"><i class="fa-solid fa-book me-1"></i> Wiki</a></li>
+                    <li><a href="midia.html"><i class="fa-solid fa-images me-1"></i> Mídia</a></li>
+                    <li><a href="att.html"><i class="fa-solid fa-bolt me-1"></i> Atualizações</a></li>
+                    <li><a href="info.html"><i class="fa-solid fa-users me-1"></i> Sobre nós</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-direita">
+                <img src="ifrn.png" alt="IFRN" class="header-ifrn">
+            </div>
+        </header>
+
+        <div class="main">
+            
+            <aside class="sidebar-esq">
+                <h3><i class="fa-solid fa-compass me-2" style="color: #8b3a3a;"></i>Guia de navegação</h3>
+                <ul>
+                    <li data-target="#historia">História</li>
+                    <li data-target="#personagens">Personagens</li>
+                    <li data-target="#mapa">Mapa</li>
+                </ul>
+            </aside>
+
+                <main class="img-centro">
+            
+                    <div id="inicio" class="centro-cima">
+                    <img src="equipe.jpg" alt="Banner BattleQuizz" class="banner-img">
+                    <div class="title-overlay">
+                        <h1 class="main-title">BattleQuizz</h1>
+                    </div>
+                </div>
+
+                <div class="centro-baixo">
+                <div id="historia" class="dark-box align-start">
+                    <div class="badge-context"><i class="fa-solid fa-scroll me-2"></i>História</div>
+    
+                    <div class="wiki-container">
+                    <div class="wiki-media-block">
+                    <div class="wiki-foto-wrapper">
+                            <img src="Rei.jpg" alt="Rei fulano" class="wiki-img">
+                    </div>
+                    <div class="wiki-char-name">Rei Fulano</div>
+                    </div>
+        
+                    <div class="wiki-text-block">
+                    <p class="context-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet pretium lorem. Etiam posuere, massa eu feugiat tincidunt, quam mi volutpat turpis, quis consectetur neque lectus et ex. Integer quis magna id massa sagittis hendrerit.
+                    </p>
+                    <p class="context-text mt-2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet pretium lorem. Etiam posuere, massa eu feugiat tincidunt.
+                    </p>
+                    </div>
+                    </div>
+                </div>
+
+                <div id="mapa" class="dark-box align-start">
+                        <div class="badge-context"><i class="fa-solid fa-map me-2"></i>Mapa</div>
+                        
+                        
+                        <div class="context-container">
+                            <div class="foto-placeholder">
+                                <img src="castelo.png" alt="Castelo Interno" class="img-fluid rounded">
+                            </div>
+                            <p class="context-text m-0">
+                                <strong class="d-block text-danger mb-1"><i class="fa-solid fa-shield-halved me-2"></i>Castelo interno</strong>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet pretium lorem. Etiam posuere, massa eu feugiat tincidunt, quam mi volutpat turpis, quis consectetur neque lectus et ex.
+                            </p>
+                        </div>
+
+                        
+                        <div class="context-container">
+                            <div class="foto-placeholder">
+                                <img src="casteloFora.png" alt="casteloFora" class="img-fluid rounded">
+                            </div>
+                            <p class="context-text m-0">
+                                <strong class="d-block text-danger mb-1"><i class="fa-solid fa-chess-rook me-2"></i>Castelo exterior</strong>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet pretium lorem. Etiam posuere, massa eu feugiat tincidunt, quam mi volutpat turpis, quis consectetur neque lectus et ex.
+                            </p>
+                        </div>
+
+                        
+                        <div class="context-container">
+                            <div class="foto-placeholder">
+                                <img src="cidade.png" alt="cidade" class="img-fluid rounded">
+                            </div>
+                            <p class="context-text m-0">
+                                <strong class="d-block text-danger mb-1"><i class="fa-solid fa-house me-2"></i>Cidade</strong>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet pretium lorem. Etiam posuere, massa eu feugiat tincidunt, quam mi volutpat turpis, quis consectetur neque lectus et ex.
+                            </p>
+                        </div>
+                    </div>
+
+            </main>
+
+            <aside class="sidebar-dir">
+                <div class="sidebar-right-title"><i class="fa-solid fa-circle-exclamation me-2"></i>Informações</div>
+                <div class="info-card-mini">
+                    <small class="d-block text-muted">Status</small>
+                    <span>Em Desenvolvimento</span>
+                </div>
+                <div class="info-card-mini mt-2">
+                    <small class="d-block text-muted">Versão</small>
+                    <span>v1.0.4-beta</span>
+                </div>
+                </aside>
+            
+    </div>
+
+    <!-- RODAPÉ  -->
+        <footer>
+            <div class="footer-content">
+                <p class="m-0"><i class="fa-solid fa-graduation-cap me-2"></i> Projeto desenvolvido estritamente para fins acadêmicos.</p>
+                <p class="m-0 mt-1 text-muted">&copy; 2026 BattleQuizz. Todos os direitos reservados aos autores e ao IFRN.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+    
+    const menuItems = document.querySelectorAll('.sidebar-esq ul li');
+    
+    menuItems.forEach(item => {
+        item.addEventListener('click', () => {
+            // Pega o id que está no data-target (ex: #inicio, #pdf)
+            const targetId = item.getAttribute('data-target');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+               
+                targetElement.scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: 'start' 
+                });
+            } else {
+                // Caso falte o id em alguma div do HTML, avisa no console (F12)
+                console.warn(`Aviso: O elemento com o id "${targetId}" não foi encontrado no HTML.`);
+            }
+        });
+    });
+
+});
+    </script>
 </body>
 </html>
