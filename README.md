@@ -31,9 +31,9 @@ Oi!! Este repositótio foi feito para o controle de versão do site do nosso TCC
 
 -No terminal, digite:
 
---cd nome_da_pasta_do_projeto
+--cd nome_pasta_projeto
 ----------------------------------------------------------------------------------------------------------
-**Comandos Git para mexer com segurança:**
+**->Comandos Git para mexer com segurança:**
 
 -Puxar as alterações mais recentes:
 git pull origin main
