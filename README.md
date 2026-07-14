@@ -35,7 +35,7 @@ Oi!! Este repositótio foi feito para o controle de versão do site do nosso TCC
 ----------------------------------------------------------------------------------------------------------
 **Comandos Git para mexer com segurança:**
 
--Antes de mexer em qualquer linha de código, você DEVE puxar as alterações mais recentes!!
+-Puxar as alterações mais recentes:
 git pull origin main
 
 -Criar e entrar em uma nova branch:
@@ -47,16 +47,19 @@ git branch
 -Mudar para uma branch que já existe:
 git checkout nome-da-branch
 
-**Para eviar as alterações:
+**Para eviar as alterações:**
 
 -Preparar os arquivos modificados:
+
 git add .
 (O ponto significa que você está preparando todos os arquivos que mexeu. (Se quiser preparar apenas um, use git add arquivo.html)
 
 -Criar o ponto de salvamento (Commit):
-git commit -m "mensagem"
+
+git commit -m "mensagem
 -m = Explique brevemente o que você fez para os outros integrantes saberem.
 
 -Enviar a sua branch para o GitHub:
+
 git push origin nome-da-sua-branch
 
