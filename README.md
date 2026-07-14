@@ -6,7 +6,9 @@ Oi!! Este repositótio foi feito para o site do nosso TCC, o jogo BattleQuizz.
 **Tutorial de como clonar o repositório na sua maquina local:**
 
 -Pré-requisitos:
+
 Ter o Git instalado no computador.
+
 Ter uma ferramenta para abrir o código (como o VS Code).
 
 
