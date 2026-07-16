@@ -32,6 +32,7 @@ Oi!! Este repositótio foi feito para o controle de versão do site do nosso TCC
 -No terminal, digite:
 
 cd BattleQuizz
+
 code .
 
 ----------------------------------------------------------------------------------------------------------
