@@ -17,23 +17,13 @@ Oi!! Este repositótio foi feito para o controle de versão do site do nosso TCC
 
 2)Abra o Terminal na sua máquina:
 
--Crie ou escolha uma pasta no seu computador para guardar o projeto.
-
--Entre nessa pasta, clica com o botão direito num espaço vazio e escolhe "Abrir no Terminal".
-
-3)Clone o repositório:
-
 -No terminal, digite:
 
 --git clone https://github.com/anaflasousa/BattleQuizz.git
 
-4)Entre na pasta do projeto:
+--cd BattleQuizz
 
--No terminal, digite:
-
-cd BattleQuizz
-
-code .
+--code .
 
 ----------------------------------------------------------------------------------------------------------
 **->Comandos Git para mexer com segurança:**
@@ -41,7 +31,7 @@ code .
 -Puxar as alterações mais recentes:
 git pull origin main
 
--Criar e entrar em uma nova branch:
+-Criar e entrar em uma *nova* branch:
 git checkout -b nome-da-sua-branch
 
 -Ver em qual branch você está atualmente:
