@@ -31,7 +31,9 @@ Oi!! Este repositótio foi feito para o controle de versão do site do nosso TCC
 
 -No terminal, digite:
 
-cd nome_pasta_projeto
+cd BattleQuizz
+code .
+
 ----------------------------------------------------------------------------------------------------------
 **->Comandos Git para mexer com segurança:**
 
