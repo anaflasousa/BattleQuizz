@@ -1,0 +1,177 @@
+/* Estilos específicos para a página Sobre Nós - Conteúdo Premium + Estrutura Padrão */
+
+/* Ajuste do topo integrado perfeitamente ao formato da página */
+.sobre-header-custom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 380px;
+    background: linear-gradient(135deg, #e6dfc7 0%, #d8cfb3 100%);
+    border-bottom: 4px solid #c4a473;
+    color: #261c1c;
+    text-align: center;
+    width: 100%;
+}
+
+.sobre-title-italic {
+    font-family: 'Cinzel', serif;
+    font-size: 56px;
+    font-weight: 900;
+    font-style: italic;
+    margin-top: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+}
+
+/* Layout do Card de Participante - Retangular Plano por fora, Premium por dentro */
+.participante-layout {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    align-items: stretch;
+    margin-top: 20px;
+}
+
+.participante-foto {
+    width: 220px;
+    min-height: 280px;
+    background: linear-gradient(145deg, #8b3a3a, #6b2828);
+    border-radius: 0px; /* Mantido retangular plano conforme solicitado */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(230, 223, 199, 0.8);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.participante-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.participante-header-box {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    border-bottom: 2px solid rgba(196, 164, 115, 0.3); 
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+}
+
+.participante-nome {
+    color: #c4a473; 
+    margin: 0; 
+    font-family: 'Quicksand', sans-serif; 
+    font-weight: 800;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+}
+
+.participante-lattes-badge {
+    color: #e6dfc7; 
+    font-weight: 700; 
+    background: linear-gradient(135deg, #8b3a3a 0%, #752e2e 100%); 
+    padding: 4px 14px; 
+    border-radius: 0px; /* Retangular */
+    font-size: 13px;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.2s ease;
+}
+
+.participante-lattes-badge:hover {
+    filter: brightness(1.2);
+    transform: scale(1.05);
+}
+
+.participante-desc {
+    font-size: 15px;
+    font-weight: 700;
+    font-style: italic;
+    color: #3a2c2c;
+    line-height: 1.7;
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.25);
+    padding: 15px;
+    border-radius: 0px; /* Retangular */
+    border-left: 4px solid #8b3a3a;
+}
+
+.participante-redes-container {
+    display: flex; 
+    gap: 15px; 
+    margin-top: 25px;
+}
+
+.btn-redes {
+    flex: 1;
+    text-align: center;
+    padding: 12px;
+    background-color: #261c1c;
+    color: #e6dfc7;
+    border-radius: 0px; /* Retangular */
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-redes:hover {
+    background: #8b3a3a;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(139, 58, 58, 0.3);
+}
+
+/* Ajustes dos Voluntários - Quadrados/Retangulares com o visual Interno trabalhado */
+.voluntario-card {
+    background: transparent !important;
+    box-shadow: none !important;
+    border-radius: 0px !important;
+    transition: transform 0.3s ease !important;
+}
+
+.voluntario-card:hover {
+    transform: translateY(-6px) !important;
+    background: transparent !important;
+}
+
+.voluntario-foto {
+    width: 130px;
+    height: 130px;
+    background: linear-gradient(145deg, #8b3a3a, #6b2828);
+    border-radius: 0px; /* Quadrado/Retangular puro */
+    margin: 0 auto 15px auto;
+    border: 3px solid #c4a473;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(230, 223, 199, 0.4);
+}
+
+.voluntario-texto {
+    font-weight: 800;
+    font-style: italic;
+    color: #4a3b3b;
+    font-size: 14px;
+    margin-top: 5px;
+    padding: 4px 8px;
+    background: rgba(196, 164, 115, 0.15);
+    border-radius: 0px; /* Retangular */
+    display: inline-block;
+}
+
