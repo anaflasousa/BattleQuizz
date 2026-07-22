@@ -362,3 +362,185 @@ footer .text-muted {
     color: #c4a473 !important;
     font-size: 12px;
 }
+
+
+/* Título*/
+.titulo-midia-container {
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.titulo-midia-badge {
+    background-color: #8b3a3a;
+    color: #e6dfc7;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 4px 14px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+.titulo-midia-main {
+    font-family: 'Cinzel', serif;
+    font-size: 34px;
+    font-weight: 900;
+    color: #261c1c;
+    letter-spacing: 1px;
+    margin: 0;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.titulo-midia-main span {
+    color: #8b3a3a; 
+}
+
+.titulo-midia-main i {
+    color: #8b3a3a;
+    font-size: 20px;
+}
+
+.grid-midia {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+/* Card da Galeria */
+.card-midia {
+    background-color: #e6dfc7;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(38, 28, 28, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-midia:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Container da Foto */
+.midia-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: #261c1c;
+    overflow: hidden;
+}
+
+.midia-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card-midia:hover .midia-img-wrapper img {
+    transform: scale(1.05);
+}
+
+/* Tag na Foto */
+.midia-tag {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 4px 10px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.tag-evento { background-color: #8b3a3a; }
+.tag-feedback { background-color: #261c1c; }
+.tag-bastidores { background-color: #c4a473; color: #261c1c; }
+
+/* Corpo do Card */
+.midia-body {
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-grow: 1;
+}
+
+.midia-titulo {
+    font-size: 18px;
+    font-weight: 800;
+    color: #261c1c;
+    margin: 0;
+}
+
+.midia-data {
+    font-size: 12px;
+    font-weight: 700;
+    color: #666;
+}
+
+.midia-desc {
+    font-size: 14px;
+    color: #3a2e2e;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/*  titulo  */
+.tag-update { background-color: #8b3a3a; color: #fff; }
+.tag-spoilers { background-color: #261c1c; color: #c4a473; }
+
+.titulo-mural-game {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.titulo-mural-game .subtitulo {
+    display: block;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    color: #8b3a3a;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 2px;
+}
+
+.titulo-mural-game .principal {
+    font-family: 'Cinzel', serif;
+    font-size: 32px;
+    font-weight: 900;
+    color: #261c1c;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 0px rgba(196, 164, 115, 0.5);
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.titulo-mural-game .principal::before,
+.titulo-mural-game .principal::after {
+    content: "✦";
+    color: #8b3a3a;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.titulo-mural-game .principal::before { left: -5px; }
+.titulo-mural-game .principal::after { right: -5px; }

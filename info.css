@@ -1,6 +1,6 @@
-/* Estilos específicos para a página Sobre Nós - Conteúdo Premium + Estrutura Padrão */
 
-/* Ajuste do topo integrado perfeitamente ao formato da página */
+
+
 .sobre-header-custom {
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@
     letter-spacing: 1px;
 }
 
-/* Layout do Card de Participante - Retangular Plano por fora, Premium por dentro */
+/*Card de Participante  */
 .participante-layout {
     display: flex;
     width: 100%;
@@ -136,7 +136,7 @@
     box-shadow: 0 6px 12px rgba(139, 58, 58, 0.3);
 }
 
-/* Ajustes dos Voluntários - Quadrados/Retangulares com o visual Interno trabalhado */
+/*  Voluntários  */
 .voluntario-card {
     background: transparent !important;
     box-shadow: none !important;
@@ -175,3 +175,47 @@
     display: inline-block;
 }
 
+/*  Titulo  */
+.tag-update { background-color: #8b3a3a; color: #fff; }
+.tag-spoilers { background-color: #261c1c; color: #c4a473; }
+
+.titulo-mural-game {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.titulo-mural-game .subtitulo {
+    display: block;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    color: #8b3a3a;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 2px;
+}
+
+.titulo-mural-game .principal {
+    font-family: 'Cinzel', serif;
+    font-size: 32px;
+    font-weight: 900;
+    color: #261c1c;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 0px rgba(196, 164, 115, 0.5);
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.titulo-mural-game .principal::before,
+.titulo-mural-game .principal::after {
+    content: "✦";
+    color: #8b3a3a;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.titulo-mural-game .principal::before { left: -5px; }
+.titulo-mural-game .principal::after { right: -5px; }

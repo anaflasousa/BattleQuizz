@@ -362,3 +362,206 @@ footer .text-muted {
     color: #c4a473 !important;
     font-size: 12px;
 }
+
+.post-card {
+    background-color: #e6dfc7;
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(38, 28, 28, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Header do Autor */
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px dashed rgba(38, 28, 28, 0.15);
+    padding-bottom: 12px;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.author-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #261c1c;
+    border: 2px solid #8b3a3a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e6dfc7;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+.author-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.author-details .name {
+    font-weight: 800;
+    color: #8b3a3a;
+    font-size: 15px;
+}
+
+.author-details .role {
+    font-size: 12px;
+    color: #555;
+    font-weight: 700;
+}
+
+.post-date {
+    font-size: 12px;
+    font-weight: 700;
+    color: #666;
+    background: rgba(0,0,0,0.06);
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+/* Conteúdo */
+.post-title {
+    font-size: 20px;
+    font-weight: 900;
+    color: #261c1c;
+    margin: 0;
+}
+
+.post-content {
+    font-size: 15px;
+    color: #3a2e2e;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* CONTAINER DE IMAGEM DA POSTAGEM */
+.post-image-container {
+    width: 100%;
+    max-height: 320px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    border: 2px solid #261c1c;
+    background-color: #261c1c;
+}
+
+.post-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.post-image-container img:hover {
+    transform: scale(1.02); /* Efeito suave de zoom ao passar o mouse */
+}
+
+/* Blocos "O que rolou" e "Próximos Passos" */
+.dev-block {
+    background: rgba(255, 255, 255, 0.45);
+    border-radius: 8px;
+    padding: 12px 16px;
+}
+
+.dev-block-title {
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.dev-block-title.done { color: #2e7d32; }
+.dev-block-title.next { color: #d84315; }
+
+.status-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.status-list li {
+    font-size: 14px;
+    font-weight: 600;
+    color: #261c1c;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.status-list li:last-child { margin-bottom: 0; }
+
+/* Rodapé das Tags */
+.post-footer {
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+.community-tag {
+    font-size: 11px;
+    font-weight: 800;
+    padding: 4px 10px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.tag-update { background-color: #8b3a3a; color: #fff; }
+.tag-spoilers { background-color: #261c1c; color: #c4a473; }
+
+.titulo-mural-game {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.titulo-mural-game .subtitulo {
+    display: block;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    color: #8b3a3a;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 2px;
+}
+
+.titulo-mural-game .principal {
+    font-family: 'Cinzel', serif;
+    font-size: 32px;
+    font-weight: 900;
+    color: #261c1c;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 0px rgba(196, 164, 115, 0.5);
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.titulo-mural-game .principal::before,
+.titulo-mural-game .principal::after {
+    content: "✦";
+    color: #8b3a3a;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.titulo-mural-game .principal::before { left: -5px; }
+.titulo-mural-game .principal::after { right: -5px; }
